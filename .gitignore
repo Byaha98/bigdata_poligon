@@ -1,0 +1,5 @@
+target/
+dbt_packages/
+logs/
+airflow_dbt/dags/__pycache__
+airflow_dbt/dbt/logs
