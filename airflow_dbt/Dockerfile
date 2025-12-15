@@ -25,4 +25,5 @@ RUN pip install --no-cache-dir \
     black isort fs-s3fs \
     dbt-core==1.10.4 \
     dbt-clickhouse==1.9.2 \
-    airflow-clickhouse-plugin==1.5.0          
+    airflow-clickhouse-plugin==1.5.0 \
+    apache-airflow-providers-telegram         
