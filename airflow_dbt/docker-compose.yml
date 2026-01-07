@@ -57,9 +57,13 @@ services:
     restart: always
 
   clickhouse-server:
-    image: clickhouse/clickhouse-server:24.3.6
+    build:
+      context: .
+      dockerfile: Dockerfile.clickhouse
     container_name: clickhouse-server
     network_mode: host
+    environment:
+      CLICKHOUSE_SKIP_USER_SETUP: 1
     cap_add:
       - SYS_NICE
       - NET_ADMIN
