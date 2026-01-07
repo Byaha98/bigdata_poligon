@@ -57,9 +57,7 @@ services:
     restart: always
 
   clickhouse-server:
-    build:
-      context: .
-      dockerfile: Dockerfile.clickhouse
+    image: clickhouse/clickhouse-server:25.4.3
     container_name: clickhouse-server
     network_mode: host
     environment:

@@ -1,3 +1,0 @@
-# Используем официальный образ ClickHouse Server версии 25.3.11
-FROM clickhouse/clickhouse-server:25.3.11
-
