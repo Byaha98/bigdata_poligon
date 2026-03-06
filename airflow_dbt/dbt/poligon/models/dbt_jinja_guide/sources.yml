@@ -1,0 +1,10 @@
+# name: raw — имя источника в dbt (для вызова source('raw', 'raw_table_utc')), не схема.
+# Таблица в базе: default.raw_table_utc
+sources:
+  - name: raw
+    database: default
+    tables:
+      - name: raw_table_utc
+        description: Сырая таблица заказов с временными метками в UTC (order_id, created_at)
+      - name: raw_events_utc
+        description: Сырая таблица событий (user_id, event, event_timestamp UTC)
